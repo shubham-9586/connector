@@ -1,4 +1,4 @@
-const socket=io('https://connecter-9586.herokuapp.com');
+const socket=io('https://connecter-123.herokuapp.com');
 const form=document.getElementById('send-container');
 const messageInput=document.getElementById('messageInp');
 const messagecontainer=document.querySelector(".container");
