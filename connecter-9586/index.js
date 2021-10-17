@@ -1,5 +1,11 @@
-const io=require('socket.io')(`{process.env.PORT}`);
- 
+//const io=require('socket.io')(`{process.env.PORT}`);
+ const io = require("socket.io")(process.env.PORT, {
+    cors: {
+      origin: "*", 
+    }
+  });
+
+
 const users={};
 
 io.on('connection', socket=>{
